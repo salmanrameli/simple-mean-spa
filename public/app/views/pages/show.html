@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="row">
+            <table class="table table-bordered table-striped" ng-show="user.users">
+                <thead>
+                <tr>
+                    <th>_id</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th class="col-sm-2"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="person in user.users">
+                    <td>{{ person._id }}</td>
+                    <td>{{ person.name }}</td>
+                    <td>{{ person.username }}</td>
+                    <td>
+                        <a ng-href="/{{ person._id }}/edit" class="btn btn-warning">Edit</a>
+                        <!--<a href="#" ng-click="user.deleteUser(person._id)" class="btn btn-primary">Delete</a>-->
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

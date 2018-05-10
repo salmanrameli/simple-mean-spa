@@ -1,0 +1,17 @@
+{
+  "name": "simple-usercrm",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "morgan": "latest",
+    "mongoose": "latest"
+  }
+}
